@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a, button {
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    -ms-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: -1rem;
+    padding: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.heading {
+    margin: 1rem 0 1rem;
+    padding: 1.5rem .8rem 1rem;
+}
+
+.heading h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-nav .container nav.navbar {
+    background-color: #343a40;
+    width: 100%;
+}
+
+.heading-nav .container nav.navbar button:focus {
+    outline: none;
+}
+
+.heading-nav .container nav.navbar button .navbar-toggler-icon i {
+    color: #FFFFFF;
+}
+
+.heading-nav .container nav.navbar #navbarContent ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav-link {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 5px 10px;
+ }
+
+#sign_in,
+#sign_up {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .nav-link:hover {
+    color: #7293e5;
+    text-decoration: underline;
+}
+.navbar .navbar-nav .nav-item .nav-link.btn-accent:hover,
+#navbarDropdownLanguage:hover {
+    text-decoration: none;
+}
+
+#navbarDropdownLanguage i.fas {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+}
+
+header {
+    background-image: url("img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 35rem;
+}
+
+header .header-test {
+    text-align: left;
+    padding: 10rem 1rem 1rem 1rem;
+}
+
+header .header-test h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.btn-accent{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #fff;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.btn-accent:hover {
+    background-color: #ffffff;
+    color: #7293e5;
+}
+
+.btn-accent:focus {
+    outline: none;
+    overflow: hidden;
+}
+
+
+/*------------------
+    slider styles
+--------------------*/
+
+main .slider-section {
+    background-color: #606060;
+
+}
+
+.slider-section .sl_block {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.slider-section .heading h2 {
+    color: #ffffff;
+}
+
+.sl_block .slick-carousel .sl-slider-1 {
+    position: relative;
+}
+
+.sl_block .slick-carousel .sl-slider-1 a img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.sl_block .slick-carousel .sl-slider-1 .sl_text {
+    position: absolute;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    opacity: 0.6;
+    color: #ffffff;
+    z-index: -1500;
+}
+
+.sl_block .slick-carousel .sl-slider-1 .sl_text .sl_heading,
+.sl_block .slick-carousel .sl-slider-1 .sl_text .sl_paragraph {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.sl_block .slick-carousel .sl-slider-1 .sl_text .sl_heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.sl_block .slick-carousel .sl-slider-1 .sl_text .sl_paragraph {
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+.slider-nav .sl-slider-2 {
+    background-color: #FFFFFF;
+    padding: .1rem;
+    cursor: pointer;
+}
+
+
+/*------------------
+    web technologies
+--------------------*/
+section.web-tech {
+    background-color: #87ceeb;
+}
+
+.web-tech .container .tech-block {
+    padding: 1rem;
+}
+
+.web-tech .container .tech-block .row .col-md-6 {
+    margin-bottom: 1rem;
+}
+
+.web-tech .container .tech-block .row .col-md-6 .card .row .col-md-4 img,
+.web-tech .container .tech-block .row .col-md-6 .card .row {
+    height: 100%;
+}
+
+.web-tech .container .tech-block .row .col-md-6 .card .row .col-md-4 img {
+    padding: .5rem;
+}
+
+.web-tech .container .tech-block .row .col-md-6 .card .row .col-md-8 .card-body a h5 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.web-tech .container .tech-block .row .col-md-6 .card .row .col-md-8 .card-body .card-text {
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+/*-----------
+    modal
+------------*/
+
+.modal-content {
+    background-color: #212529;
+}
+
+.modal-content .modal-header h5,
+.modal-content .modal-header button,
+.modal-footer .mod-f-text span.f-text {
+    color: #FFFFFF;
+}
+.modal-footer .mod-f-text {
+    text-align: center;
+}
+
+#account-sign-up .form-group label,
+#account-sign-in .form-group label {
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+#account-sign-up .form-group label:hover,
+#account-sign-in .form-group label:hover {
+    color: #7293e5;
+}
+
+#account-sign-up .form-group:last-child {
+    text-align: center;
+}
+span.help-text {
+    color: #FFFFFF;
+    font-size: .6rem;
+    line-height: 1.2;
+}
+
+/*-----------------
+     My Skills
+------------------*/
+.skills {
+    background-color: #627883;
+}
+
+.cards_section {
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.skills .cards_section .container .heading h1 {
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.skills .cards_section .container .row .col-md-3 .card .card-header,
+.skills .cards_section .container .row .col-md-3 .card .card-body {
+    padding: .5rem 1rem
+
+}
+
+.card {
+    height: 100%;
+    word-wrap: inherit;
+    cursor: pointer;
+}
+
+.cards_section .container .row div .card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.card:hover .card-header {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.card:hover .card-body > h2 {
+    color: #00BFFF;
+    transition: 0.2s;
+}
+
+.card-header {
+    background-color: #112c47;
+    color: #FFF;
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 1rem;
+}
+
+.card-body {
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
+
+.card-body h2 {
+    font-size: 1.8rem;
+    padding: .5rem;
+    word-break: break-word;
+}
+
+
+#first-progress {
+    margin-top: 1rem;
+}
+
+.progress {
+    background-color: #fff;
+    padding: 0;
+    margin: .8rem auto;
+
+}
+
+.progress-bar {
+    padding: 0;
+}
+
+#first-progress > .progress > .progress-bar {
+    width: 0;
+}
+
+#second-progress > .progress > .progress-bar {
+    width: 0;
+}
+
+#third-progress > .progress > .progress-bar {
+    width: 0;
+}
+
+#first-card:hover ~ #first-progress > div.progress > div {
+    width: 60%;
+}
+#first-card:hover ~ #second-progress > div.progress > div {
+    width: 80%;
+}
+#first-card:hover ~ #third-progress > div.progress > div {
+    width: 50%;
+}
+#second-card:hover ~ #first-progress > div.progress > div {
+    width: 80%;
+}
+#second-card:hover ~ #second-progress > div.progress > div {
+    width: 90%;
+}
+#second-card:hover ~ #third-progress > div.progress > div {
+    width: 90%;
+}
+#third-card:hover ~ #first-progress > div.progress > div {
+    width: 100%;
+}
+#third-card:hover ~ #second-progress > div.progress > div {
+    width: 100%;
+}
+#third-card:hover ~ #third-progress > div.progress > div {
+    width: 100%;
+}
+
+
+/*----program skils---*/
+
+#program-progress > .progress > .progress-bar {
+    width: 0;
+}
+
+#html-card:hover ~ #program-progress > div.progress > div {
+    width: 90%;
+}
+
+#css-card:hover ~ #program-progress > div.progress > div {
+    width: 80%;
+}
+
+#js-card:hover ~ #program-progress > div.progress > div {
+    width: 40%;
+}
+
+#php-card:hover ~ #program-progress > div.progress > div {
+    width: 40%;
+}
+
+/*-------------------
+    gallery-section
+----------------------*/
+
+
+.gallery-section .container .row div .fancy-pic {
+    margin: 1rem;
+}
+
+.gallery-section .container .row div .grouped_elements .card {
+    position: relative;
+    border: 1px solid #2F4F4F;
+    border-radius: 3px;
+}
+
+.gallery-section .container .row div .grouped_elements .card .fancy-card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    background: #000;
+    opacity: 0.6;
+    color: #ffffff;
+    z-index: -5;
+}
+
+.gallery-section .container .row div .grouped_elements .card .fancy-card-body i {
+    position: absolute;
+    top: 45%;
+}
+
+.gallery-section .container .row div a.grouped_elements:hover .card > .fancy-card-body  {
+    z-index: 5;
+}
+
+.gallery-section .container .row div a.grouped_elements:hover {
+
+}
+
+/*------------------------
+  Sign-in Sign-up Delete
+-------------------------*/
+body.account-page-bg {
+background-color: #6dbbff;
+}
+
+body.account-page-bg main .account-section .container .row div {
+    text-align: center;
+}
+
+body.account-page-bg main .account-section .container .row div > a {
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+body.account-page-bg main .account-section .container .row div > a:hover,
+#account-form-input .form-group label:hover {
+    color: #7293e5;
+}
+
+#account-form-input .form-group,
+#account-form-input {
+    text-align: left;
+}
+
+#account-form-input .form-group label {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+#account-form-input {
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 592px) {
+    html {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .heading-nav .container nav.navbar #navbarContent ul {
+        margin: 0 auto;
+    }
+    .sl_block .slick-carousel .sl-slider-1 .sl_text {
+        z-index: 1500;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+    header .container nav.navbar #navbarContent ul.navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1680px) {
+    html {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
