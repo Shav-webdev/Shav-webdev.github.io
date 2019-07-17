@@ -48,17 +48,16 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav" id="menu_nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link home-tr" href="index.php"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.php">Gallery</a>
+                        <a class="nav-link gallery-tr" href="gallery.php"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="my_skills.php" target="_blank">My Skills</a>
+                        <a class="nav-link my_skills-tr" href="my_skills.php" target="_blank"> </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contacts
+                        <a class="nav-link dropdown-toggle contacts-tr" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://web.facebook.com/shavarsh7777" target="_blank">Facebook</a>
@@ -70,19 +69,17 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-globe"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
-                            <a class="dropdown-item" id="langEng" href="#">English</a>
-                            <a class="dropdown-item" id="langRu" href="#" onclick="changeLangToRus()">Русский</a>
-                            <a class="dropdown-item" id="langArm" href="#">Հայերեն</a>
+                        <div class="dropdown-menu lang" aria-labelledby="navbarDropdownLanguage">
+                            <a class="dropdown-item" data-lang="en" id="langEng" href="#">English</a>
+                            <a class="dropdown-item" data-lang="ru" id="langRu" href="#">Русский</a>
+                            <a class="dropdown-item" data-lang="hy" id="langArm" href="#">Հայերեն</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <button type="button" id="sign_in" class="nav-link" data-toggle="modal" data-target="#signInModal">sign in</button>
-<!--                        <a class="nav-link" href="sign-in.php">sign in</a>-->
+                        <button type="button" id="sign_in" class="nav-link sign_in-tr" data-toggle="modal" data-target="#signInModal"></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" id="sign_up" class="nav-link btn-accent" data-toggle="modal" data-target="#signUpModal">sign up</button>
-<!--                        <a class="nav-link btn-accent" href="sign-up.php">sign up</a>-->
+                        <button type="button" id="sign_up" class="nav-link btn-accent sign_up-tr" data-toggle="modal" data-target="#signUpModal"></button>
                     </li>
                 </ul>
             </div>
@@ -92,7 +89,7 @@
 <header>
     <div class="container">
         <div class="header-test">
-            <h1 class="animated fadeInDown delay-1s">Smart people, clear code</h1>
+            <h1 class="animated fadeInDown delay-1s header-h1-tr">Smart person, clear code</h1>
         </div>
     </div>
 </header>

@@ -93,7 +93,7 @@ return validateRegEx(/^[\w.-_+]+@[\w-]+(\.\w{2,4})+$/, inputField.value, helpTex
 
 
 
-function changeLangToRus() {
+/*function changeLangToRus(e) {
     let navbarListLangRus = ["главная", "галерея", "мои навыки", "контакты", "войти", "регистрация"];
     let nodeParent = document.getElementsByTagName("ul")[0];
     let nodeChild = document.getElementsByTagName("ul")[0].childNodes[1];
@@ -104,8 +104,51 @@ function changeLangToRus() {
             nodeChild.childNodes[1].textContent = navbarListLangRus[j];
         }
     }
+}*/
+
+const translations = {
+    'en': {
+        "home": "Home",
+        "gallery": "Gallery",
+        "my_skills": "Skills",
+        "contacts": "Contacts",
+        "sign_in": "Sign in",
+        "sign_up": "sign up",
+        "header-h1": "Smart person, clear code"
+
+    },
+    'ru': {
+        "home": "главная",
+        "gallery": "галерея",
+        "my_skills": "навыки",
+        "contacts": "контакты",
+        "sign_in": "войти",
+        "sign_up": "регистрация",
+        "header-h1": "Умный человек, понятный код"
+    },
+    'hy': {
+        "home": "Գլխավոր",
+        "gallery": "Պատկերասրահ",
+        "my_skills": "հմտություններ",
+        "contacts": "կապ",
+        "sign_in": "մուտք",
+        "sign_up": "գրանցում",
+        "header-h1": "Խելացի մարդ, հստակ կոդ"
+    }
+};
+
+function fillNavContent(lang) {
+    const obj = translations[lang];
+    Object.keys(obj).forEach((el) => {
+        document.querySelectorAll('.' + el + '-tr')[0].innerHTML = obj[el];
+    })
 }
 
+fillNavContent('en');
+
+document.querySelector('.lang').addEventListener('click', (event) => {
+    fillNavContent(event.target.getAttribute('data-lang'));
+});
 
 
 
