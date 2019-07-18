@@ -39,7 +39,7 @@
 <body>
 <div class="heading-nav">
     <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top animated fadeInDown delay-1s">
+        <nav class="navbar navbar-expand-lg fixed-top animated wow fadeInDown delay-1s">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-bars"></i>
@@ -89,17 +89,17 @@
 <header>
     <div class="container">
         <div class="header-test">
-            <h1 class="animated fadeInDown delay-1s header-smart-tr">Smart person, clear code</h1>
+            <h1 class="animated wow fadeInDown delay-1s header-smart-tr">Smart person, clear code</h1>
         </div>
     </div>
 </header>
 <main>
     <section class="slider-section">
         <div class="heading">
-            <h2 class="animated fadeInDown delay-1s web-dev-tr">Web programming</h2>
+            <h2 class="animated wow fadeInDown delay-1s web-dev-tr">Web programming</h2>
         </div>
         <div class="sl_block">
-            <div class="slick-carousel animated bounceInLeft delay-2s">
+            <div class="slick-carousel animated wow bounceInLeft delay-1s">
                 <div class="sl-slider-1">
                     <a href="#">
                         <img src="img/pic1.png" alt="Web development" class="sl-img-1">
@@ -200,7 +200,7 @@
                     </a>
                 </div>
             </div>
-            <div class="slider-nav animated bounceInRight delay-3s">
+            <div class="slider-nav animated wow bounceInRight delay-1s">
                 <div class="sl-slider-2">
                     <img src="img/min_pic1.jpg" alt="Web development" class="sl-img-2">
                 </div>
@@ -243,11 +243,11 @@
     <section class="web-tech" ">
         <div class="container">
             <div class="heading">
-                <h2 class="animated bounceInLeft delay-3s web-dev-tech-tr">Web development technologies</h2>
+                <h2 class="animated wow bounceInLeft delay-1s web-dev-tech-tr">Web development technologies</h2>
             </div>
-            <div class="tech-block animated bounceInRight delay-4s">
+            <div class="tech-block animated wow bounceInRight delay-1s">
                 <div class="row">
-                    <div class="col-md-6 animated bounceInRight delay-4s">
+                    <div class="col-md-6 animated wow bounceInRight delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -264,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated bounceInRight delay-4s">
+                    <div class="col-md-6 animated wow bounceInRight delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated bounceInLeft delay-5s">
+                    <div class="col-md-6 animated wow bounceInLeft delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -298,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated bounceInLeft delay-5s">
+                    <div class="col-md-6 animated wow bounceInLeft delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated bounceInRight delay-5s">
+                    <div class="col-md-6 animated wow bounceInRight delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -332,7 +332,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated bounceInRight delay-5s">
+                    <div class="col-md-6 animated wow bounceInRight delay-1s">
                         <div class="card" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -353,98 +353,121 @@
             </div>
         </div>
     </section>
+    <section class="map-section">
+        <div class="container">
+            <div id="map" class="animated wow bounceInLeft delay-1s"></div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=<96518fe9-c964-442c-b25c-958fe1fbd748>&lang=ru_RU" type="text/javascript">
+        </script>
+    </section>
     <section></section>
 </main>
 <footer>
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title mod-sign_up-tr" id="exampleModalLabel">Sign up</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="action.php" method="post" id="account-sign-up">
-                        <div class="form-group">
-                            <label for="input-name" class="col-form-label modal_form_name-tr">Full name <i class="fas fa-user"></i></label>
-                            <input type="text" name="name" placeholder="Enter full name" class="form-control" id="input-name" required onblur="validateInputField(this, document.getElementById('help_name'))">
-                            <span id="help_name" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-email" class="col-form-label modal_form_email-tr">Email <i class="fas fa-envelope"></i></label>
-                            <input type="email" name="email" placeholder="Enter E-mail" class="form-control" id="input-email" required onblur="validateEmail(this, document.getElementById('help_email'))">
-                            <span id="help_email" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-password" class="col-form-label modal_form_pass-tr">Password <i class="fas fa-lock"></i></label>
-                            <input type="password" name="pass" placeholder="Enter password" class="form-control" id="input-password" required onblur="validateInputField(this, document.getElementById('help_pass'))">
-                            <span id="help_pass" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="repeat-password" class="col-form-label modal_form_repeat-pass-tr">Repeat password <i class="fas fa-lock"></i></label>
-                            <input type="password" name="repeat_pass" placeholder="Repeat password" class="form-control" id="repeat-password" required onblur="validateInputField(this, document.getElementById('help_re_pass'))">
-                            <span id="help_re_pass" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <button name="submit" class="btn btn-accent mod-btn-reg-tr">Register</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="mod-f-text">
+
+</footer>
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mod-sign_up-tr" id="exampleModalLabel">Sign up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="action.php" method="post" id="account-sign-up">
+                    <div class="form-group">
+                        <label for="input-name" class="col-form-label modal_form_name-tr">Full name <i class="fas fa-user"></i></label>
+                        <input type="text" name="name" placeholder="Enter full name" class="form-control" id="input-name" required onblur="validateInputField(this, document.getElementById('help_name'))">
+                        <span id="help_name" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-email" class="col-form-label modal_form_email-tr">Email <i class="fas fa-envelope"></i></label>
+                        <input type="email" name="email" placeholder="Enter E-mail" class="form-control" id="input-email" required onblur="validateEmail(this, document.getElementById('help_email'))">
+                        <span id="help_email" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-password" class="col-form-label modal_form_pass-tr">Password <i class="fas fa-lock"></i></label>
+                        <input type="password" name="pass" placeholder="Enter password" class="form-control" id="input-password" required onblur="validateInputField(this, document.getElementById('help_pass'))">
+                        <span id="help_pass" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeat-password" class="col-form-label modal_form_repeat-pass-tr">Repeat password <i class="fas fa-lock"></i></label>
+                        <input type="password" name="repeat_pass" placeholder="Repeat password" class="form-control" id="repeat-password" required onblur="validateInputField(this, document.getElementById('help_re_pass'))">
+                        <span id="help_re_pass" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <button name="submit" class="btn btn-accent mod-btn-reg-tr">Register</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="mod-f-text">
                         <span class="f-text f-text-tr">
                             By creating an account, I agree to shav.blog.am’s Terms of Use and Privacy Policy.
                         </span>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="action.php" method="post" id="account-sign-in">
-                        <div class="form-group">
-                            <label for="si-input-email" class="col-form-label">Email <i class="fas fa-envelope"></i></label>
-                            <input type="email" name="email" placeholder="Enter E-mail" class="form-control" id="si-input-email" required onblur="validateEmail(this, document.getElementById('help_email'))">
-                            <span id="si-help_email" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="si-input-password" class="col-form-label">Password <i class="fas fa-lock"></i></label>
-                            <input type="password" name="pass" placeholder="Enter password" class="form-control" id="si-input-password" required onblur="validateInputField(this, document.getElementById('si-help_pass'))">
-                            <span id="si-help_pass" class="help-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <button name="submit" class="btn btn-accent">Sign up</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="mod-f-text">
-                        <span class="f-text">
+</div>
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sign-in-tr" id="exampleModalLabel">Sign in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="action.php" method="post" id="account-sign-in">
+                    <div class="form-group">
+                        <label for="si-input-email" class="col-form-label modal_signIn_email-tr">Email <i class="fas fa-envelope"></i></label>
+                        <input type="email" name="email" placeholder="Enter E-mail" class="form-control" id="si-input-email" required onblur="validateEmail(this, document.getElementById('help_email'))">
+                        <span id="si-help_email" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="si-input-password" class="col-form-label modal_signIn_pass-tr">Password <i class="fas fa-lock"></i></label>
+                        <input type="password" name="pass" placeholder="Enter password" class="form-control" id="si-input-password" required onblur="validateInputField(this, document.getElementById('si-help_pass'))">
+                        <span id="si-help_pass" class="help-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <button name="submit" class="btn btn-accent mod-btn-sign-in-tr">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="mod-f-text">
+                        <span class="f-text mod-signIn-txt-tr">
                            Don't have an account yet? Register your account now.
                         </span>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/fontawesome.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+    new WOW().init();
+
+    ymaps.ready(init);
+
+    function init() {
+        let myMap = new ymaps.Map("map", {
+            center: [40.153844, 44.509281],
+            zoom: 13,
+            controls: ['typeSelector', 'fullscreenControl']
+        });
+    }
+
+</script>
 <script src="script.js"></script>
 </body>
 </html>

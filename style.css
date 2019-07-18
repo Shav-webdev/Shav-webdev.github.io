@@ -237,6 +237,19 @@ section.web-tech {
     font-size: .9rem;
     line-height: 1.2;
 }
+/*----------------
+    map-section
+------------------*/
+.map-section {
+    background-color: #212529;
+}
+
+#map {
+    margin: 2rem auto;
+    width: 800px;
+    height: 400px;
+    border: 2px solid #FFFFFF;
+}
 
 /*-----------
     modal
@@ -275,6 +288,11 @@ span.help-text {
     color: #FFFFFF;
     font-size: .6rem;
     line-height: 1.2;
+}
+
+.modal-footer {
+    justify-content: center;
+    text-align: center;
 }
 
 /*-----------------
@@ -465,44 +483,6 @@ span.help-text {
 
 .gallery-section .container .row div a.grouped_elements:hover {
 
-}
-
-/*------------------------
-  Sign-in Sign-up Delete
--------------------------*/
-body.account-page-bg {
-background-color: #6dbbff;
-}
-
-body.account-page-bg main .account-section .container .row div {
-    text-align: center;
-}
-
-body.account-page-bg main .account-section .container .row div > a {
-    color: #FFFFFF;
-    font-size: 2rem;
-    line-height: 1.2;
-}
-
-body.account-page-bg main .account-section .container .row div > a:hover,
-#account-form-input .form-group label:hover {
-    color: #7293e5;
-}
-
-#account-form-input .form-group,
-#account-form-input {
-    text-align: left;
-}
-
-#account-form-input .form-group label {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    cursor: pointer;
-}
-
-#account-form-input {
-    margin-top: 5rem;
 }
 
 @media screen and (min-width: 592px) {

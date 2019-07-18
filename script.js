@@ -125,6 +125,10 @@ const translations = {
         "modal_form_repeat-pass": "Repeat password",
         "f-text": " By creating an account, I agree to shav.blog.am’s Terms of Use and Privacy Policy.",
         "mod-btn-reg": "Register",
+        "mod-btn-sign-in": "Sign in",
+        "modal_signIn_email": "Email",
+        "modal_signIn_pass": "Password",
+        "mod-signIn-txt": "Don't have an account yet? Register your account now.",
     },
     'ru': {
         "home": "главная",
@@ -143,8 +147,10 @@ const translations = {
         "modal_form_repeat-pass": "Повторите пароль",
         "f-text": " Создавая аккаунт, я согласен с Условиями использования и политикой конфиденциальности shav.blog.am.",
         "mod-btn-reg": "Регистрация",
-
-
+        "mod-btn-sign-in": "войти",
+        "modal_signIn_email": "Эл. адрес",
+        "modal_signIn_pass": "Пароль",
+        "mod-signIn-txt": "У вас еще нет аккаунта? Зарегистрируйте свой аккаунт сейчас.",
 
     },
     'hy': {
@@ -157,12 +163,18 @@ const translations = {
         "header-smart": "Խելացի մարդ, հստակ կոդ",
         "web-dev": "Վեբ ծրագրավորում",
         "web-dev-tech": "Վեբ զարգացման տեխնոլոգիաները",
+        "mod-sign_up": "Գրանցում",
         "modal_form_name": "Ամբողջական անունը",
         "modal_form_email": "էլ. հասցե",
         "modal_form_pass": "Գաղտնաբառը",
         "modal_form_repeat-pass": "Կրկնեք գաղտնաբառը",
         "f-text": " Գրանցվելով, ես համաձայնում եմ shav.blog.am- ի Օգտագործման պայմաններին եւ գաղտնիության քաղաքականությանը:",
         "mod-btn-reg": "Գրանցում",
+        "mod-btn-sign-in": "մուտք",
+        "modal_signIn_email": "էլ. հասցե",
+        "modal_signIn_pass": "Գաղտնաբառը",
+        "mod-signIn-txt": "Դեռ Գրանցվա՞ծ չեք։ Գրանցվեք այսօր։",
+
     }
 };
 
@@ -178,7 +190,6 @@ fillNavContent('en');
 document.querySelector('.lang').addEventListener('click', (event) => {
     fillNavContent(event.target.getAttribute('data-lang'));
 });
-
 
 
 
