@@ -89,14 +89,14 @@
 <header>
     <div class="container">
         <div class="header-test">
-            <h1 class="animated fadeInDown delay-1s header-h1-tr">Smart person, clear code</h1>
+            <h1 class="animated fadeInDown delay-1s header-smart-tr">Smart person, clear code</h1>
         </div>
     </div>
 </header>
 <main>
     <section class="slider-section">
         <div class="heading">
-            <h2 class="animated fadeInDown delay-1s">Web development </h2>
+            <h2 class="animated fadeInDown delay-1s web-dev-tr">Web programming</h2>
         </div>
         <div class="sl_block">
             <div class="slick-carousel animated bounceInLeft delay-2s">
@@ -243,7 +243,7 @@
     <section class="web-tech" ">
         <div class="container">
             <div class="heading">
-                <h2 class="animated bounceInLeft delay-3s">Web development technologies</h2>
+                <h2 class="animated bounceInLeft delay-3s web-dev-tech-tr">Web development technologies</h2>
             </div>
             <div class="tech-block animated bounceInRight delay-4s">
                 <div class="row">
@@ -360,7 +360,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <h5 class="modal-title mod-sign_up-tr" id="exampleModalLabel">Sign up</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -368,33 +368,33 @@
                 <div class="modal-body">
                     <form action="action.php" method="post" id="account-sign-up">
                         <div class="form-group">
-                            <label for="input-name" class="col-form-label">Full name <i class="fas fa-user"></i></label>
+                            <label for="input-name" class="col-form-label modal_form_name-tr">Full name <i class="fas fa-user"></i></label>
                             <input type="text" name="name" placeholder="Enter full name" class="form-control" id="input-name" required onblur="validateInputField(this, document.getElementById('help_name'))">
                             <span id="help_name" class="help-text"></span>
                         </div>
                         <div class="form-group">
-                            <label for="input-email" class="col-form-label">Email <i class="fas fa-envelope"></i></label>
+                            <label for="input-email" class="col-form-label modal_form_email-tr">Email <i class="fas fa-envelope"></i></label>
                             <input type="email" name="email" placeholder="Enter E-mail" class="form-control" id="input-email" required onblur="validateEmail(this, document.getElementById('help_email'))">
                             <span id="help_email" class="help-text"></span>
                         </div>
                         <div class="form-group">
-                            <label for="input-password" class="col-form-label">Password <i class="fas fa-lock"></i></label>
+                            <label for="input-password" class="col-form-label modal_form_pass-tr">Password <i class="fas fa-lock"></i></label>
                             <input type="password" name="pass" placeholder="Enter password" class="form-control" id="input-password" required onblur="validateInputField(this, document.getElementById('help_pass'))">
                             <span id="help_pass" class="help-text"></span>
                         </div>
                         <div class="form-group">
-                            <label for="repeat-password" class="col-form-label">Repeat password <i class="fas fa-lock"></i></label>
+                            <label for="repeat-password" class="col-form-label modal_form_repeat-pass-tr">Repeat password <i class="fas fa-lock"></i></label>
                             <input type="password" name="repeat_pass" placeholder="Repeat password" class="form-control" id="repeat-password" required onblur="validateInputField(this, document.getElementById('help_re_pass'))">
                             <span id="help_re_pass" class="help-text"></span>
                         </div>
                         <div class="form-group">
-                            <button name="submit" class="btn btn-accent">Register</button>
+                            <button name="submit" class="btn btn-accent mod-btn-reg-tr">Register</button>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="mod-f-text">
-                        <span class="f-text">
+                        <span class="f-text f-text-tr">
                             By creating an account, I agree to shav.blog.am’s Terms of Use and Privacy Policy.
                         </span>
                     </div>
