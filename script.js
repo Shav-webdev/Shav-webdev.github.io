@@ -22,7 +22,14 @@ jQuery(document).ready(function() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 968,
+                settings: {
+                    slidesToShow: 4,
                     infinite: true,
                 }
             },
@@ -117,6 +124,8 @@ const translations = {
         "sign_up": "sign up",
         "header-smart": "Smart person, clear code",
         "web-dev": "Web programming",
+        "sl_heading": "Slide No",
+        "sl_paragraph": "Smart person, clear code",
         "web-dev-tech": "Web development technologies",
         "mod-sign_up": "Sign up",
         "modal_form_name": "Full name",
@@ -126,9 +135,15 @@ const translations = {
         "f-text": " By creating an account, I agree to shav.blog.am’s Terms of Use and Privacy Policy.",
         "mod-btn-reg": "Register",
         "mod-btn-sign-in": "Sign in",
+        "mod-sign-in": "Sign in",
         "modal_signIn_email": "Email",
         "modal_signIn_pass": "Password",
         "mod-signIn-txt": "Don't have an account yet? Register your account now.",
+        "map-location": "My location",
+        "ft-home": "Home",
+        "ft-gallery": "Gallery",
+        "ft-my_skills": "Skills",
+        "ft-contacts": "Contacts",
     },
     'ru': {
         "home": "главная",
@@ -139,6 +154,8 @@ const translations = {
         "sign_up": "регистрация",
         "header-smart": "Умный человек, понятный код",
         "web-dev": "Веб программирование",
+        "sl_heading": "Слайд No",
+        "sl_paragraph": "Умный человек, понятный код",
         "web-dev-tech": "Технологии веб-разработки",
         "mod-sign_up": "Регистрация",
         "modal_form_name": "ФИО",
@@ -148,9 +165,15 @@ const translations = {
         "f-text": " Создавая аккаунт, я согласен с Условиями использования и политикой конфиденциальности shav.blog.am.",
         "mod-btn-reg": "Регистрация",
         "mod-btn-sign-in": "войти",
+        "mod-sign-in": "войти",
         "modal_signIn_email": "Эл. адрес",
         "modal_signIn_pass": "Пароль",
         "mod-signIn-txt": "У вас еще нет аккаунта? Зарегистрируйте свой аккаунт сейчас.",
+        "map-location": "мое местоположение",
+        "ft-home": "главная",
+        "ft-gallery": "галерея",
+        "ft-my_skills": "навыки",
+        "ft-contacts": "контакты",
 
     },
     'hy': {
@@ -162,6 +185,8 @@ const translations = {
         "sign_up": "գրանցում",
         "header-smart": "Խելացի մարդ, հստակ կոդ",
         "web-dev": "Վեբ ծրագրավորում",
+        "sl_heading": "Սլայդ No",
+        "sl_paragraph": "Խելացի մարդ, հստակ կոդ",
         "web-dev-tech": "Վեբ զարգացման տեխնոլոգիաները",
         "mod-sign_up": "Գրանցում",
         "modal_form_name": "Ամբողջական անունը",
@@ -171,24 +196,29 @@ const translations = {
         "f-text": " Գրանցվելով, ես համաձայնում եմ shav.blog.am- ի Օգտագործման պայմաններին եւ գաղտնիության քաղաքականությանը:",
         "mod-btn-reg": "Գրանցում",
         "mod-btn-sign-in": "մուտք",
+        "mod-sign-in": "մուտք",
         "modal_signIn_email": "էլ. հասցե",
         "modal_signIn_pass": "Գաղտնաբառը",
-        "mod-signIn-txt": "Դեռ Գրանցվա՞ծ չեք։ Գրանցվեք այսօր։",
-
+        "mod-signIn-txt": "Դեռ գրանցվա՞ծ չեք։ Գրանցվեք այսօր։",
+        "map-location": "իմ հասցեն",
+        "ft-home": "Գլխավոր",
+        "ft-gallery": "Պատկերասրահ",
+        "ft-my_skills": "հմտություններ",
+        "ft-contacts": "կապ",
     }
 };
 
-function fillNavContent(lang) {
+function fillSiteContent(lang) {
     const obj = translations[lang];
     Object.keys(obj).forEach((el) => {
         document.querySelectorAll('.' + el + '-tr')[0].innerHTML = obj[el];
     })
 }
 
-fillNavContent('en');
+fillSiteContent('en');
 
 document.querySelector('.lang').addEventListener('click', (event) => {
-    fillNavContent(event.target.getAttribute('data-lang'));
+    fillSiteContent(event.target.getAttribute('data-lang'));
 });
 
 

@@ -244,16 +244,95 @@ section.web-tech {
     background-color: #212529;
 }
 
-#map {
-    margin: 2rem auto;
-    width: 800px;
-    height: 400px;
-    border: 2px solid #FFFFFF;
+.map-section .container .heading h2 {
+    color: #FFFFFF;
 }
 
-/*-----------
-    modal
-------------*/
+.map-section .container .map-block {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 2rem auto;
+    border: 2px solid #FFFFFF;
+}
+/*------------
+    footer
+--------------*/
+
+footer {
+    margin-top: -1rem;
+    background-color: #112c47;
+}
+
+footer .container .footer-content .ft-nav-menu,
+footer .container .footer-content .social-sites,
+footer .container .footer-content .copyright {
+    padding: 1.5rem;
+}
+
+
+footer .container .footer-content .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+footer .container .footer-content .navbar-nav .nav-item {
+    padding: 1rem 2rem;
+}
+
+footer .container .footer-content .navbar-nav .nav-item .nav-link {
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+footer .container .footer-content .navbar-nav .nav-item .nav-link:hover {
+    color: #7293e5;
+    text-decoration: underline;
+}
+
+footer .container .footer-content .social-sites  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+footer .container .footer-content .social-sites a {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+footer .container .footer-content .social-sites a:hover {
+    color: #134bda;
+}
+
+footer .container .footer-content .copyright {
+    text-align: center;
+}
+
+footer .container .footer-content .copyright-txt {
+    color: #FFFFFF;
+    font-size: .8rem;
+    line-height: 1.2;
+}
+
+
+    /*-----------
+        modal
+    ------------*/
 
 .modal-content {
     background-color: #212529;
@@ -264,6 +343,14 @@ section.web-tech {
 .modal-footer .mod-f-text span.f-text {
     color: #FFFFFF;
 }
+
+.modal-content .modal-header h5,
+.modal-content .modal-header button,
+.modal-body form .form-group label {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .modal-footer .mod-f-text {
     text-align: center;
 }
