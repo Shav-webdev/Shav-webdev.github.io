@@ -54,7 +54,7 @@
                         <a class="nav-link gallery-tr" href="gallery.php"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link my_skills-tr" href="my_skills.php" target="_blank"> </a>
+                        <a class="nav-link my_skills-tr" href="my_skills.php"> </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle contacts-tr" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

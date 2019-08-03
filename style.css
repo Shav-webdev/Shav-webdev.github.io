@@ -292,6 +292,7 @@ footer .container .footer-content .navbar-nav .nav-item .nav-link {
     color: #FFFFFF;
     font-size: 1rem;
     line-height: 1.2;
+    text-transform: capitalize;
 }
 
 footer .container .footer-content .navbar-nav .nav-item .nav-link:hover {
@@ -313,6 +314,7 @@ footer .container .footer-content .social-sites a {
     font-size: 1.2rem;
     line-height: 1.2;
     margin: 1rem;
+
 }
 
 footer .container .footer-content .social-sites a:hover {
