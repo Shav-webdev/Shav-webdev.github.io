@@ -15,7 +15,7 @@ $sql = "INSERT INTO users (name, email, pass, repeat_pass)
 
 if ($connection->query($sql) === TRUE){
     echo "Record created";
-    echo "Record created";
+
 
 
 }
