@@ -75,7 +75,7 @@ function validateInputField(inputField, helpText) {
 }
 
 
-//validation input field via regex
+//validation input field via regexp
 
 function validateRegEx(regex, inputStr, helpText, helpMessage) {
     if (!regex.test(inputStr)){
@@ -124,6 +124,7 @@ const translations = {
         "sign_up": "sign up",
         "header-smart": "Smart person, clear code",
         "web-dev": "Web programming",
+        "web-dev-projects":"My projects",
         "sl_heading": "Slide No",
         "sl_paragraph": "Smart person, clear code",
         "web-dev-tech": "Web development technologies",
@@ -154,6 +155,7 @@ const translations = {
         "sign_up": "регистрация",
         "header-smart": "Умный человек, понятный код",
         "web-dev": "Веб программирование",
+        "web-dev-projects":"Мои проекты",
         "sl_heading": "Слайд No",
         "sl_paragraph": "Умный человек, понятный код",
         "web-dev-tech": "Технологии веб-разработки",
@@ -185,9 +187,10 @@ const translations = {
         "sign_up": "գրանցում",
         "header-smart": "Խելացի մարդ, հստակ կոդ",
         "web-dev": "Վեբ ծրագրավորում",
+        "web-dev-projects":"Իմ ծրագրերը",
         "sl_heading": "Սլայդ No",
         "sl_paragraph": "Խելացի մարդ, հստակ կոդ",
-        "web-dev-tech": "Վեբ զարգացման տեխնոլոգիաները",
+        "web-dev-tech": "Վեբ ծրագրավորման տեխնոլոգիաները",
         "mod-sign_up": "Գրանցում",
         "modal_form_name": "Ամբողջական անունը",
         "modal_form_email": "էլ. հասցե",

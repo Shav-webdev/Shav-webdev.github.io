@@ -202,6 +202,14 @@ main .slider-section {
     padding: .1rem;
     cursor: pointer;
 }
+/*-------------------
+my-projects section
+---------------------*/
+
+.my-projects {
+    background-color: #8784f8;
+    padding-bottom: 3rem;
+}
 
 
 /*------------------
@@ -318,7 +326,7 @@ footer .container .footer-content .social-sites a {
 }
 
 footer .container .footer-content .social-sites a:hover {
-    color: #134bda;
+    color: #7b8287;
 }
 
 footer .container .footer-content .copyright {
