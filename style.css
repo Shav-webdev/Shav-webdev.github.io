@@ -211,6 +211,62 @@ my-projects section
     padding-bottom: 3rem;
 }
 
+.my-projects .heading h2 {
+    color: #fff;
+}
+
+.project-block .row div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.project-block .row div .card {
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid #b79292;
+    overflow: hidden;
+
+}
+.project-block .row div .card:hover {
+    box-shadow: 0 6px 15px 2px;
+    transform: scale(1.06);
+    transition: .3s;
+}
+
+.project-block .row div .card img {
+    height: 100%;
+    max-height: 150px;
+}
+
+.project-block .row div .card a:hover {
+    text-decoration: none;
+}
+
+.project-block .row div .card .card-body{
+    max-height: max-content;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.project-block .row div .card .card-body h5{
+    border-bottom: 1px solid #fff;
+}
+
+.project-block .row div .card .card-body .card-title,
+.project-block .row div .card .card-body .card-text {
+    color: #fff;
+}
+
+
 
 /*------------------
     web technologies
@@ -454,7 +510,7 @@ span.help-text {
 
 .card-body {
     vertical-align: middle;
-    background-color: #FFFFFF;
+    background-color: #cec8b7;
 }
 
 .card-body h2 {

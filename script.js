@@ -145,6 +145,15 @@ const translations = {
         "ft-gallery": "Gallery",
         "ft-my_skills": "Skills",
         "ft-contacts": "Contacts",
+        "web-dev-projects": "My projects",
+        "to_do_app_js_title": "To do App",
+        "to_do_app_js": "Application on pure JavaScript",
+        "react_to_do_app_title": "To do React App",
+        "react_to_do_app": "Application on ReactJS",
+        "data_table_title": "Data table",
+        "data_table": "Application on pure JavaScript",
+        "slider_title": "Slider",
+        "slider": "Application on pure JavaScript",
     },
     'ru': {
         "home": "главная",
@@ -176,7 +185,15 @@ const translations = {
         "ft-gallery": "галерея",
         "ft-my_skills": "навыки",
         "ft-contacts": "контакты",
-
+        "web-dev-projects": "Мои проекты",
+        "to_do_app_js_title": "To do приложение",
+        "to_do_app_js": "Приложение на чистом JavaScript",
+        "react_to_do_app_title": "To do ReactJS приложение",
+        "react_to_do_app": "Приложение на ReactJS",
+        "data_table_title": "Таблица данных",
+        "data_table": "Приложение на чистом JavaScript",
+        "slider_title": "Слайдер",
+        "slider": "Приложение на чистом JavaScript",
     },
     'hy': {
         "home": "Գլխավոր",
@@ -208,6 +225,15 @@ const translations = {
         "ft-gallery": "Պատկերասրահ",
         "ft-my_skills": "հմտություններ",
         "ft-contacts": "կապ",
+        "web-dev-projects": "Իմ պրոյեկտները",
+        "to_do_app_js_title": "To do",
+        "to_do_app_js": "Ծրագիրը գրված է JavaScript-ով",
+        "react_to_do_app_title": "To do",
+        "react_to_do_app": "Ծրագիրը գրված է ReactJS-ով",
+        "data_table_title": "Data table",
+        "data_table": "Ծրագիրը գրված է JavaScript-ով",
+        "slider_title": "Slider",
+        "slider": "Ծրագիրը գրված է JavaScript-ով",
     }
 };
 
