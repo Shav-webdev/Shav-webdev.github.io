@@ -255,6 +255,7 @@ my-projects section
     align-items: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    background-color: #cec8b7;
 }
 
 .project-block .row div .card .card-body h5{
@@ -510,7 +511,7 @@ span.help-text {
 
 .card-body {
     vertical-align: middle;
-    background-color: #cec8b7;
+    background-color: #fff;
 }
 
 .card-body h2 {
