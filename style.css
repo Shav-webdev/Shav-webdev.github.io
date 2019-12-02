@@ -217,7 +217,7 @@ my-projects section
 
 .project-block .row div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
@@ -228,6 +228,7 @@ my-projects section
     border-radius: 5px;
     border: 1px solid #b79292;
     overflow: hidden;
+    margin: 1rem .5rem;
 
 }
 .project-block .row div .card:hover {
@@ -647,12 +648,20 @@ span.help-text {
     .container {
         width: 100%;
         margin: 0 auto;
+        padding: 0 1rem;
     }
     .heading-nav .container nav.navbar #navbarContent ul {
         margin: 0 auto;
     }
     .sl_block .slick-carousel .sl-slider-1 .sl_text {
         z-index: 1500;
+    }
+    .project-block .row div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2rem 0;
     }
 
 }
@@ -672,7 +681,6 @@ span.help-text {
         width: 60%;
         margin: 0 auto;
     }
-
 }
 @media screen and (min-width: 1280px) {
     html {
