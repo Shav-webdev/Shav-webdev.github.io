@@ -101,7 +101,7 @@ section {
 }
 
 header {
-    background-image: url("img/header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -229,12 +229,16 @@ my-projects section
     border: 1px solid #b79292;
     overflow: hidden;
     margin: 1rem .5rem;
-
 }
 .project-block .row div .card:hover {
     box-shadow: 0 6px 15px 2px;
     transform: scale(1.06);
     transition: .3s;
+}
+
+.project-block .row div .card a {
+    display: block;
+    width: 100%;
 }
 
 .project-block .row div .card img {
@@ -518,7 +522,7 @@ span.help-text {
 .card-body h2 {
     font-size: 1.8rem;
     padding: .5rem;
-    word-break: break-word;
+    word-break: keep-all;
 }
 
 
@@ -550,13 +554,13 @@ span.help-text {
 }
 
 #first-card:hover ~ #first-progress > div.progress > div {
-    width: 60%;
-}
-#first-card:hover ~ #second-progress > div.progress > div {
     width: 80%;
 }
+#first-card:hover ~ #second-progress > div.progress > div {
+    width: 90%;
+}
 #first-card:hover ~ #third-progress > div.progress > div {
-    width: 50%;
+    width: 80%;
 }
 #second-card:hover ~ #first-progress > div.progress > div {
     width: 80%;
@@ -593,11 +597,11 @@ span.help-text {
 }
 
 #js-card:hover ~ #program-progress > div.progress > div {
-    width: 40%;
+    width: 90%;
 }
 
 #php-card:hover ~ #program-progress > div.progress > div {
-    width: 40%;
+    width: 80%;
 }
 
 /*-------------------

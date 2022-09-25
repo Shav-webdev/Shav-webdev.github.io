@@ -148,12 +148,16 @@ const translations = {
         "web-dev-projects": "My projects",
         "to_do_app_js_title": "To do App",
         "to_do_app_js": "Application on pure JavaScript",
+        "dino_js": "Application on pure JavaScript",
         "react_to_do_app_title": "To do React App",
         "react_to_do_app": "Application on ReactJS",
         "data_table_title": "Data table",
         "data_table": "Application on pure JavaScript",
         "slider_title": "Slider",
         "slider": "Application on pure JavaScript",
+        "to_do_app_js_canvas": "Application on pure JavaScript and Canvas",
+        "fire-game": "Breakout game ",
+        "dino-game": "Dinosaur game",
     },
     'ru': {
         "home": "главная",
@@ -188,12 +192,16 @@ const translations = {
         "web-dev-projects": "Мои проекты",
         "to_do_app_js_title": "To do приложение",
         "to_do_app_js": "Приложение на чистом JavaScript",
+        "dino_js": "Приложение на чистом JavaScript",
         "react_to_do_app_title": "To do ReactJS приложение",
         "react_to_do_app": "Приложение на ReactJS",
         "data_table_title": "Таблица данных",
         "data_table": "Приложение на чистом JavaScript",
+        "to_do_app_js_canvas": "Приложение на чистом JavaScript и Canvas",
         "slider_title": "Слайдер",
         "slider": "Приложение на чистом JavaScript",
+        "fire-game": "Прорывная игра",
+        "dino-game": "Динозавр игра",
     },
     'hy': {
         "home": "Գլխավոր",
@@ -228,19 +236,26 @@ const translations = {
         "web-dev-projects": "Իմ պրոյեկտները",
         "to_do_app_js_title": "To do",
         "to_do_app_js": "Ծրագիրը գրված է JavaScript-ով",
+        "dino_js": "Ծրագիրը գրված է JavaScript-ով",
         "react_to_do_app_title": "To do",
         "react_to_do_app": "Ծրագիրը գրված է ReactJS-ով",
         "data_table_title": "Data table",
         "data_table": "Ծրագիրը գրված է JavaScript-ով",
+        "to_do_app_js_canvas": "Ծրագիրը գրված է JavaScript-ով և Canvas-ով",
         "slider_title": "Slider",
         "slider": "Ծրագիրը գրված է JavaScript-ով",
+        "fire-game": "Breakout խաղ",
+        "dino-game": "Դինոզավր խաղ",
     }
 };
 
 function fillSiteContent(lang) {
     const obj = translations[lang];
     Object.keys(obj).forEach((el) => {
-        document.querySelectorAll('.' + el + '-tr')[0].innerHTML = obj[el];
+        const selector = document.querySelectorAll('.' + el + '-tr')
+        if (selector && selector[0]){
+            selector[0].innerHTML = obj[el];
+        }
     })
 }
 
